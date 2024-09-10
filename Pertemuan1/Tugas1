@@ -1,0 +1,28 @@
+import 'dart:math';
+
+// Membuat kelas Lingkaran
+class Lingkaran {
+  double jariJari;
+
+  // Konstruktor kelas Lingkaran
+  Lingkaran(this.jariJari);
+
+  // Fungsi untuk menghitung luas lingkaran
+  double hitungLuas() {
+    return pi * pow(jariJari, 2);
+  }
+
+  // Fungsi untuk menampilkan informasi lingkaran
+  void tampilkanLuas() {
+    print('Luas lingkaran dengan jari-jari $jariJari adalah ${hitungLuas()}');
+  }
+}
+
+void main() {
+  // Membuat objek lingkaran dengan jari-jari tertentu
+  Lingkaran lingkaran = Lingkaran(10.0);
+  
+  // Menampilkan luas lingkaran
+  lingkaran.tampilkanLuas();
+} 
+
